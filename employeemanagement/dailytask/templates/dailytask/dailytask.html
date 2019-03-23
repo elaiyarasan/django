@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% block contant %}
+<h1>Hello You can Enter Your Daily Basis Record Here</h1>
+<form action='.' method='POST'> {% csrf_token %}
+    {{form.as_p}}
+    <input type='submit' value='Save'/>
+    </form>
+{% endblock %} 
